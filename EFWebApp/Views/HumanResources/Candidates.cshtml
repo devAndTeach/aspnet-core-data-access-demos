@@ -1,0 +1,21 @@
+﻿@model IEnumerable<EFWebApp.Models.Person>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Candidates</title>
+</head>
+<body>
+     <div>
+         @foreach(var candidate in Model)
+         {
+            <p>@candidate.FirstName @candidate.LastName</p>
+         }
+     </div>
+</body>
+</html>
